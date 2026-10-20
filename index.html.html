@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10251d">
+<title>80億分之一：足球轉生</title>
+<style>
+:root{--bg:#0b1712;--panel:#14251d;--panel2:#1b3327;--green:#b6f36a;--mint:#69dfb1;--text:#f3f7f2;--muted:#a8b9ae;--gold:#ffd36b;--red:#ff8585}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b3b2a 0,#0b1712 56%);color:var(--text);font:16px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}button{border:0;border-radius:13px;padding:12px 14px;font-weight:750;cursor:pointer;background:var(--green);color:#142016}button.secondary{background:#294638;color:var(--text);border:1px solid #42614e}button:disabled{opacity:.4;cursor:not-allowed}.app{max-width:780px;margin:auto;padding:18px 14px 42px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 18px}.brand{font-size:13px;letter-spacing:.12em;color:var(--mint);font-weight:800}.logo{font-size:25px;font-weight:950;letter-spacing:-.04em}.pill{border:1px solid #44604e;color:var(--mint);padding:6px 10px;border-radius:999px;font-size:12px;white-space:nowrap}.hero{background:linear-gradient(135deg,#244b34,#13261c 72%);border:1px solid #426b4e;border-radius:24px;padding:22px;position:relative;overflow:hidden}.hero:after{content:"⚽";position:absolute;right:-8px;top:15px;font-size:105px;opacity:.13;transform:rotate(-18deg)}.eyebrow{color:var(--green);font-weight:850;font-size:12px;letter-spacing:.12em}.hero h1{font-size:clamp(28px,7vw,43px);line-height:1.08;margin:8px 0 10px;max-width:470px}.hero p{color:#d1e2d6;max-width:480px;margin:0 0 18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.stat,.card{background:rgba(20,37,29,.92);border:1px solid #294535;border-radius:17px;padding:14px}.stat small,.muted{color:var(--muted);font-size:12px}.stat strong{display:block;font-size:22px;margin-top:3px}.section-title{display:flex;justify-content:space-between;align-items:end;margin:24px 2px 10px}.section-title h2{font-size:18px;margin:0}.section-title span{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card h3{margin:0 0 5px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px}.wide{grid-column:1/-1}.player{display:flex;align-items:center;gap:14px}.avatar{height:72px;width:72px;border-radius:18px;display:grid;place-items:center;font-size:37px;background:linear-gradient(145deg,#375f42,#172b20);border:1px solid #5d8b5b;flex-shrink:0}.player h2{margin:0;font-size:21px}.rating{color:var(--gold);font-weight:900}.bar{height:8px;border-radius:99px;background:#2b4034;overflow:hidden;margin:6px 0 10px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--green));border-radius:99px}.attr{display:grid;grid-template-columns:70px 1fr 28px;align-items:center;gap:8px;font-size:12px;color:var(--muted)}.attr .bar{margin:0}.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.actions button{width:100%}.feed{display:grid;gap:8px}.event{background:#122219;border-left:3px solid var(--mint);border-radius:9px;padding:10px 12px;font-size:13px;color:#d8e7dc}.event.good{border-color:var(--green)}.event.bad{border-color:var(--gold)}.notice{font-size:12px;color:var(--muted);margin-top:10px}.footer{font-size:11px;color:#7f9486;text-align:center;margin-top:28px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#efffe4;color:#132016;padding:11px 16px;border-radius:999px;font-weight:800;box-shadow:0 10px 35px #0008;z-index:5;max-width:90%;text-align:center}.hidden{display:none!important}.meter{display:flex;justify-content:space-between;gap:10px;font-size:13px;margin:6px 0}.meter strong{color:var(--green)}.tag{font-size:11px;color:#142016;background:var(--gold);padding:3px 7px;border-radius:6px;font-weight:850}.modal{position:fixed;inset:0;background:#000b;display:grid;place-items:center;padding:20px;z-index:10}.modalbox{max-width:440px;width:100%;background:#14251d;border:1px solid #43664d;border-radius:22px;padding:22px}.modalbox h2{margin-top:0}.modalbox p{color:var(--muted)}@media(max-width:440px){.app{padding:12px 11px 32px}.hero{padding:18px}.stats{gap:6px}.stat{padding:10px}.stat strong{font-size:19px}.grid{gap:8px}.card{padding:12px}.player{align-items:flex-start}.actions button{padding:11px 8px;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top"><div><div class="brand">ONE IN EIGHT BILLION</div><div class="logo">足球轉生 <span style="color:var(--green)">★</span></div></div><div class="pill">MVP · 第 1 賽季</div></div>
+  <section class="hero">
+    <div class="eyebrow">你的傳奇，由今天開始</div>
+    <h1>全世界 80 億人，<br>你只有一次機會。</h1>
+    <p>由街場新秀開始，訓練、比賽、簽下第一份職業合約，成為傳奇球王。</p>
+    <button id="startBtn">開始我的足球生涯 ↗</button>
+  </section>
+  <div class="stats">
+    <div class="stat"><small>現金</small><strong id="cash">$1,200</strong></div>
+    <div class="stat"><small>球迷</small><strong id="fans">86</strong></div>
+    <div class="stat"><small>生涯聲望</small><strong id="rep">0</strong></div>
+  </div>
+  <section class="card" id="playerCard">
+    <div class="player">
+      <div class="avatar" id="avatar">⚽</div>
+      <div style="flex:1;min-width:0">
+        <div class="muted">你的球員檔案 <span class="tag" id="rarity">普通天賦</span></div>
+        <h2 id="playerName">未命名新秀</h2>
+        <div class="muted" id="bio">18 歲 · 自由球員 · 前鋒</div>
+        <div class="rating">綜合能力 <span id="overall">42</span> OVR</div>
+      </div>
+    </div>
+    <div style="margin-top:17px">
+      <div class="attr"><span>射門</span><div class="bar"><i id="shootBar" style="width:42%"></i></div><b id="shoot">42</b></div>
+      <div class="attr"><span>盤球</span><div class="bar"><i id="dribbleBar" style="width:48%"></i></div><b id="dribble">48</b></div>
+      <div class="attr"><span>速度</span><div class="bar"><i id="paceBar" style="width:50%"></i></div><b id="pace">50</b></div>
+      <div class="attr"><span>體能</span><div class="bar"><i id="staminaBar" style="width:70%"></i></div><b id="stamina">70</b></div>
+    </div>
+  </section>
+  <div class="section-title"><h2>球員發展中心</h2><span>用行動提升能力</span></div>
+  <div class="grid">
+    <div class="card"><h3>⚡ 射門訓練</h3><p>提升射門能力，準備把握入球機會。</p><div style="height:12px"></div><button class="secondary" id="trainShoot">訓練 · $100</button></div>
+    <div class="card"><h3>🌀 盤球訓練</h3><p>提升盤球能力，創造更多進攻空間。</p><div style="height:12px"></div><button class="secondary" id="trainDribble">訓練 · $100</button></div>
+    <div class="card"><h3>🏃 速度訓練</h3><p>提升速度，但會消耗體能。</p><div style="height:12px"></div><button class="secondary" id="trainPace">訓練 · $100</button></div>
+    <div class="card"><h3>🛌 恢復體能</h3><p>休息一天，回復體能以迎接比賽。</p><div style="height:12px"></div><button class="secondary" id="restBtn">休息 · 免費</button></div>
+  </div>
+  <div class="section-title"><h2>下一場比賽</h2><span id="matchLabel">街場友誼賽</span></div>
+  <section class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+      <div><div class="muted">對手</div><h2 style="margin:3px 0">港灣青年隊</h2><div class="muted">勝利可獲得現金、球迷及聲望</div></div>
+      <div style="font-size:42px">🏟️</div>
+    </div>
+    <div class="meter"><span>你的狀態</span><strong id="conditionText">體能 70 / 100</strong></div>
+    <div class="bar"><i id="conditionBar" style="width:70%"></i></div>
+    <button id="matchBtn" style="width:100%;margin-top:10px">⚽ 開始比賽</button>
+    <p class="notice">每場比賽會消耗體能。能力、體能及少量隨機因素會影響賽果。</p>
+  </section>
+  <div class="section-title"><h2>生涯紀錄</h2><span id="dayLabel">第 1 日</span></div>
+  <div class="feed" id="feed"><div class="event">歡迎來到足球轉生。你嘅傳奇由第一腳球開始。</div></div>
+
+<style>
+.v2box{background:#14251d;border:1px solid #42614e;border-radius:17px;padding:15px;margin:14px 0;color:#f3f7f2}.v2box button{margin:4px 3px}.v2grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.v2event{padding:12px;background:#102118;border-left:3px solid #ffd36b;border-radius:9px;margin:8px 0}.v2small{color:#a8b9ae;font-size:12px}@media(max-width:440px){.v2grid{grid-template-columns:1fr}}
+</style>
+<section class="v2box" id="careerV2"><div class="eyebrow">V2 · AUTO CAREER</div><h2>🌍 自動生涯・球會市場</h2><p>遊戲會自動推進日子；突發事件出現時會暫停，等你選擇。現實球會名稱只用於非官方遊戲模擬。</p><button id="autoV2">⏸ 暫停自動運行</button> <span id="autoTextV2" class="v2small">自動運行：開啟，每 8 秒推進一天</span><div class="v2grid"><div><h3>🏟️ 球會試訓</h3><div id="clubsV2"></div></div><div><h3>⚡ 突發事件</h3><div id="eventV2" class="v2event">等待命運事件……</div></div></div><h3>📖 生涯時間線</h3><div id="feedV2"></div></section>
+<script>
+window.addEventListener('load',()=>{
+const $=id=>document.getElementById(id);let auto=true,timer=null,events=0,day=1,club='自由球員',wins=0,draws=0,losses=0,waiting=false;
+const clubs=[['多蒙特',58,900],['阿仙奴',60,1000],['曼聯',64,1200],['利物浦',66,1400],['國際米蘭',68,1500],['巴黎聖日耳門',70,1800],['曼城',73,2200],['拜仁慕尼黑',75,2500],['巴塞隆拿',78,3000],['皇家馬德里',80,3500]];
+const pool=[{title:'球探突然聯絡你',desc:'球探邀請你參加試訓。',a:['全力準備試訓','花 $200，聲望提升'],b:['留隊磨練','提升盤球'],f1(){s.cash=Math.max(0,s.cash-200);s.rep+=80;s.fans+=30;s.shoot=Math.min(99,s.shoot+1)},f2(){s.dribble=Math.min(99,s.dribble+2);s.energy=Math.max(0,s.energy-5)}},{title:'社交媒體出現爭議',desc:'一段訪問被斷章取義，球迷開始討論你。',a:['公開道歉','增加球迷'],b:['強硬回應','可能加聲望或失去球迷'],f1(){s.fans+=50;s.rep=Math.max(0,s.rep-5)},f2(){if(Math.random()<.55){s.rep+=50;s.fans+=15}else{s.fans=Math.max(0,s.fans-30)}}},{title:'訓練時肌肉繃緊',desc:'隊醫提醒你小心傷患。',a:['休息治療','恢復體能，花 $100'],b:['堅持訓練','速度提升但體能下降'],f1(){s.cash=Math.max(0,s.cash-100);s.energy=Math.min(100,s.energy+30)},f2(){s.pace=Math.min(99,s.pace+2);s.energy=Math.max(0,s.energy-20)}},{title:'隊友邀請你加練',desc:'隊友想同你加練配合。',a:['一齊加練','盤球同聲望提升'],b:['早啲休息','恢復體能'],f1(){s.dribble=Math.min(99,s.dribble+2);s.rep+=15;s.energy=Math.max(0,s.energy-8)},f2(){s.energy=Math.min(100,s.energy+15)}},{title:'經理人收到轉會傳聞',desc:'有球會想了解你嘅情況。',a:['安排接觸','花 $100，增加聲望'],b:['專注比賽','射門提升'],f1(){s.cash=Math.max(0,s.cash-100);s.rep+=45;s.fans+=20},f2(){s.shoot=Math.min(99,s.shoot+2)}}];
+function overall(){return Math.round((s.shoot+s.dribble+s.pace)/3)}function note(t){let el=$('feedV2');el.innerHTML='<div class="event">'+t+'</div>'+el.innerHTML;el.innerHTML=el.innerHTML.split('</div>').slice(0,7).join('</div>')}
+function renderClubs(){let av=clubs.filter(c=>overall()>=c[1]&&c[0]!==club).slice(0,4);$('clubsV2').innerHTML=av.length?av.map(c=>`<div class="v2event"><b>${c[0]}</b><div class="v2small">要求 ${c[1]} OVR · 遊戲內虛擬簽約金 $${c[2]}</div><button class="secondary" data-club="${c[0]}">申請試訓</button></div>`).join(''):'<p class="v2small">能力達到 58 OVR 後會逐步開放。先訓練或比賽！</p>';document.querySelectorAll('[data-club]').forEach(b=>b.onclick=()=>{let c=clubs.find(x=>x[0]===b.dataset.club);club=c[0];s.cash+=c[2];s.rep+=100;s.contract=true;note('✍️ 遊戲模擬：你加盟 '+club+'，獲得虛擬簽約金 $'+c[2]+'。');renderClubs();if($('bio'))$('bio').textContent=(s.contract?'職業球員':'18 歲 · 自由球員')+' · 前鋒';});}
+function event(){if(waiting||Math.random()>.23)return;waiting=true;auto=false;clearInterval(timer);let e=pool[Math.floor(Math.random()*pool.length)];$('autoV2').textContent='▶ 開啟自動運行';$('autoTextV2').textContent='自動運行已暫停：請先選擇事件';$('eventV2').innerHTML='<b>'+e.title+'</b><p>'+e.desc+'</p><button class="secondary" id="ev1">'+e.a[0]+'<div class="v2small">'+e.a[1]+'</div></button><button class="secondary" id="ev2">'+e.b[0]+'<div class="v2small">'+e.b[1]+'</div></button>';$('ev1').onclick=()=>choose(e.f1,e.title);$('ev2').onclick=()=>choose(e.f2,e.title);note('⚡ 突發事件：'+e.title+'。自動運行暫停，等你選擇。');}
+function choose(fn,title){fn();waiting=false;$('eventV2').textContent='你已選擇處理「'+title+'」。下一個事件可能隨時出現。';note('你作出選擇，生涯走向因此改變。');renderClubs();}
+function tick(){if(!auto||waiting)return;day++;s.energy=Math.min(100,s.energy+7);if(day%3===0){let p=overall()+s.energy*.12+Math.random()*20,opp=48+Math.random()*30;if(p>opp+8){wins++;s.cash+=300;s.fans+=35;s.rep+=25;note('第 '+day+' 日：比賽勝利！獲得 $300。')}else if(p>opp-7){draws++;s.cash+=150;s.fans+=12;s.rep+=10;note('第 '+day+' 日：比賽和局，獲得 $150。')}else{losses++;s.cash+=70;s.rep+=3;note('第 '+day+' 日：比賽落敗，繼續努力。')}s.energy=Math.max(0,s.energy-20)}else if(day%2===0){let k=['shoot','dribble','pace'][Math.floor(Math.random()*3)];s[k]=Math.min(99,s[k]+1);note('第 '+day+' 日：自動訓練，能力提升。')}else note('第 '+day+' 日：恢復體能及日常訓練。');if(day%30===0)note('新賽季開始！你嘅職業生涯繼續。');renderClubs();event();}
+function run(){clearInterval(timer);timer=setInterval(tick,8000)}$('autoV2').onclick=()=>{auto=!auto;$('autoV2').textContent=auto?'⏸ 暫停自動運行':'▶ 開啟自動運行';$('autoTextV2').textContent=auto?'自動運行：開啟，每 8 秒推進一天':'自動運行：已暫停';if(auto)run();else clearInterval(timer)};
+$('playMatch')?.addEventListener('click',()=>{day++;note('你手動參加比賽，生涯日數推進。');renderClubs()});$('restBtn')?.addEventListener('click',()=>{s.energy=Math.min(100,s.energy+30);note('你休息一天，體能恢復。')});
+renderClubs();run();
+});
+</script>
+
+  <div class="section-title"><h2>獎勵廣告示範區</h2><span>尚未連接廣告平台</span></div>
+  <section class="card">
+    <h3>🎁 加倍賽後獎勵</h3>
+    <p>正式版本可以讓玩家自願觀看獎勵廣告，以獲得額外獎勵。呢個 MVP 只展示流程，按下按鈕會直接給予小額測試獎勵，並不會播放廣告或產生收入。</p>
+    <div style="height:12px"></div><button id="rewardBtn" class="secondary">測試獎勵流程 · +$150</button>
+    <p class="notice" id="adStatus">廣告狀態：測試模式（收入 $0）</p>
+  </section>
+  <div class="section-title"><h2>下一個里程碑</h2><span>生涯成就</span></div>
+  <div class="grid">
+    <div class="card"><h3>🌱 職業合約</h3><p id="contractText">綜合能力達到 55，解鎖球探關注。</p><div class="bar"><i id="contractBar" style="width:0%"></i></div></div>
+    <div class="card"><h3>🌟 破圈成名</h3><p id="fansText">累積 1,000 名球迷，成為地區焦點。</p><div class="bar"><i id="fansBar" style="width:8.6%"></i></div></div>
+  </div>
+  <div class="footer">原創虛構球員與球隊 · 本地存檔 · 此為可玩原型，非正式廣告接入版本</div>
+</div>
+<div id="toast" class="toast hidden"></div>
+<div id="introModal" class="modal hidden"><div class="modalbox"><div class="eyebrow">轉生儀式</div><h2>選擇你的足球命運</h2><p>輸入球員名字，系統會隨機抽取你的初始天賦。每次新生都可能改寫人生。</p><input id="nameInput" maxlength="18" placeholder="球員名字" style="width:100%;padding:13px;border-radius:12px;background:#0c1911;border:1px solid #45624d;color:white;margin:4px 0 14px"><button id="createPlayer" style="width:100%">抽取天賦並開始</button><button class="secondary" id="cancelIntro" style="width:100%;margin-top:8px">稍後再說</button></div></div>
+<script>
+const $=id=>document.getElementById(id);
+const base={name:"未命名新秀",cash:1200,fans:86,rep:0,day:1,shoot:42,dribble:48,pace:50,stamina:70,energy:70,played:0,started:false,contract:false,rarity:"普通天賦",lastRewardDay:0,feed:["歡迎來到足球轉生。你嘅傳奇由第一腳球開始。"]};
+let s={...base};
+try{const saved=localStorage.getItem("oneIn8BillionSave");if(saved)s={...base,...JSON.parse(saved)}}catch(e){}
+let toastTimer;
+function save(){try{localStorage.setItem("oneIn8BillionSave",JSON.stringify(s))}catch(e){}}
+function toast(msg){$("toast").textContent=msg;$("toast").classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").classList.add("hidden"),2200)}
+function overall(){return Math.round((s.shoot+s.dribble+s.pace)/3)}
+function log(msg,type=""){s.feed.unshift(msg);s.feed=s.feed.slice(0,6);renderFeed();save()}
+function renderFeed(){$("feed").innerHTML=s.feed.map(x=>`<div class="event">${escapeHtml(x)}</div>`).join("")}
+function escapeHtml(x){return String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function render(){
+ $("cash").textContent="$"+s.cash.toLocaleString();$("fans").textContent=s.fans.toLocaleString();$("rep").textContent=s.rep.toLocaleString();
+ $("playerName").textContent=s.name;$("overall").textContent=overall();$("rarity").textContent=s.rarity;
+ $("bio").textContent=(s.contract?"職業球員":"18 歲 · 自由球員")+" · 前鋒";
+ for(const k of ["shoot","dribble","pace"]){$(k).textContent=s[k];$(k+"Bar").style.width=s[k]+"%"}
+ $("stamina").textContent=s.energy;$("staminaBar").style.width=s.energy+"%";
+ $("conditionText").textContent="體能 "+s.energy+" / 100";$("conditionBar").style.width=s.energy+"%";
+ $("dayLabel").textContent="第 "+s.day+" 日";
+ $("contractText").textContent=s.contract?"已簽下第一份職業合約！":"綜合能力達到 55，解鎖球探關注。";
+ $("contractBar").style.width=Math.min(100,overall()/55*100)+"%";
+ $("fansText").textContent=s.fans>=1000?"你已成為地區焦點！":"累積 1,000 名球迷，成為地區焦點。";
+ $("fansBar").style.width=Math.min(100,s.fans/1000*100)+"%";
+ $("startBtn").textContent=s.started?"繼續我的足球生涯 ↗":"開始我的足球生涯 ↗";
+ $("matchBtn").disabled=s.energy<20;
+ $("trainShoot").disabled=s.cash<100||s.shoot>=99;$("trainDribble").disabled=s.cash<100||s.dribble>=99;$("trainPace").disabled=s.cash<100||s.pace>=99;
+ $("restBtn").disabled=s.energy>=100;
+ $("rewardBtn").textContent="測試獎勵流程 · +$150";
+ renderFeed();
+}
+function train(k,label){if(s.cash<100){toast("現金不足！先踢比賽賺取獎金。");return}if(s[k]>=99){toast("呢項能力已接近上限！");return}s.cash-=100;s[k]=Math.min(99,s[k]+(Math.random()<.25?3:2));s.energy=Math.max(0,s.energy-5);s.day++;log("第 "+s.day+" 日：完成"+label+"，能力有所提升。");checkMilestones();render();toast(label+"完成！")}
+function checkMilestones(){if(!s.contract&&overall()>=55){s.contract=true;s.cash+=1000;s.fans+=150;s.rep+=100;log("🎉 球探注意到你！你簽下第一份職業合約，獲得 $1,000 簽約金。")}if(s.fans>=1000){}}
+function match(){if(s.energy<20){toast("體能不足，請先休息。");return}
+ const strength=overall()*.65+s.energy*.18+(Math.random()*18-5);
+ const opponent=48+Math.random()*18;
+ let result,bonus,fans,rep;
+ if(strength>opponent+12){result="大勝";bonus=450;fans=75;rep=35}
+ else if(strength>opponent){result="險勝";bonus=300;fans=45;rep=22}
+ else if(strength>opponent-10){result="和局";bonus=180;fans=20;rep=10}
+ else{result="落敗";bonus=100;fans=8;rep=4}
+ s.cash+=bonus;s.fans+=fans;s.rep+=rep;s.energy=Math.max(0,s.energy-25);s.day++;s.played++;
+ log("第 "+s.day+" 日：對陣港灣青年隊，"+result+"！獲得 $"+bonus+"、"+fans+" 名新球迷。");
+ checkMilestones();render();toast(result+"！賽後獎金已入帳。")
+}
+$("startBtn").onclick=()=>{if(!s.started){$("introModal").classList.remove("hidden")}else{document.querySelector("#playerCard").scrollIntoView({behavior:"smooth"});toast("歡迎回到球場！")}};
+$("createPlayer").onclick=()=>{let n=$("nameInput").value.trim();if(n)s.name=n;const roll=Math.random();if(roll<.03){s.rarity="天選之子";s.shoot+=12;s.dribble+=12;s.pace+=12;s.fans+=250;toast("傳說級天賦！你係萬中無一嘅奇才！")}else if(roll<.2){s.rarity="超級新星";s.shoot+=5;s.dribble+=5;s.pace+=5;s.fans+=80;toast("稀有天賦！球探可能會注意到你。")}else{s.rarity="普通天賦";toast("新秀已生成，靠訓練創造傳奇！")}s.started=true;$("introModal").classList.add("hidden");log("轉生成功！"+s.name+" 加入足球世界，生涯正式開始。");render();save()};
+$("cancelIntro").onclick=()=>$("introModal").classList.add("hidden");
+$("trainShoot").onclick=()=>train("shoot","射門訓練");$("trainDribble").onclick=()=>train("dribble","盤球訓練");$("trainPace").onclick=()=>train("pace","速度訓練");
+$("restBtn").onclick=()=>{s.energy=Math.min(100,s.energy+35);s.day++;log("第 "+s.day+" 日：休息恢復體能，準備下一場比賽。");render();toast("體能已恢復！")};
+$("matchBtn").onclick=match;
+$("rewardBtn").onclick=()=>{s.cash+=150;s.lastRewardDay=s.day;$("adStatus").textContent="廣告狀態：測試模式（收入 $0）· 已發放測試獎勵";log("測試廣告流程：已發放 $150 虛擬獎勵（未播放廣告）。");render();toast("測試獎勵已領取！")};
+render();if(!s.started){$("introModal").classList.add("hidden")}
+</script>
+</body>
+</html>
